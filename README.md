@@ -4,7 +4,7 @@
     npm i
 
 ### Executar Lerna Para instalar todos pacotes
-    npm pacotes
+    npm run pacotes
 
 ### Executar os dois projetos
     npm run start
