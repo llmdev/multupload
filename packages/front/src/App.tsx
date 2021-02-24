@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { DropzoneDialog } from "material-ui-dropzone";
-import axios from 'axios';
+import axios from "axios"
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
     axios.post("http://localhost:3333/upload", formData, {
       headers: {
-      "Content-Type": `multipart/form-data; boundary=${formData._boundary}`,
+      "Content-Type": `multipart/form-data;`,
       }
     }).then(response => console.log(response));
   }
@@ -35,7 +35,9 @@ function App() {
   return (
     <div className="App">
       <h1>Multi Part</h1>
+
       { files.length > 0 && <button onClick={enviarParaBackEnd} >Enviar para o backend</button> }
+
       <DropzoneDialog
         open={open}
         onSave={handleSave}

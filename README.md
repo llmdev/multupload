@@ -7,7 +7,7 @@
     npm run pacotes
 
 ### Executar os dois projetos
-    npm run start
+    npm start
 
 
 Front esta na porta 3000
