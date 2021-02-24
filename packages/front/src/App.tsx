@@ -18,7 +18,7 @@ function App() {
   function enviarParaBackEnd() {
     const formData = new FormData() as any;
 
-    // 'fileimage' é o campo que o 'multer' procura o arquivo de imagem.
+    // 'arquivos' é o campo que o 'multer' procura o arquivo de imagem.
     files.forEach( (file: any) => {
       formData.append("arquivos", file);
     })
